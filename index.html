@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Rodrigues | Portfólio Profissional</title>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Portfólio de Gustavo Rodrigues. Estudante de Engenharia de Software na UniFil, laboratorista óptico e especialista em Marketing Digital.">
+    <meta name="keywords" content="Gustavo Rodrigues, Engenharia de Software, UniFil, Laboratorista Óptico, Marketing Digital, Sistemas, Portfólio">
+    
+    <!-- Google Fonts: Outfit e Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link para a Folha de Estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegação (Glassmorphism) -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span>&lt;</span>Gustavo.R<span>/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero (Boas-vindas) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Olá, seja bem-vindo(a) 👋</span>
+                    <h1 class="hero-title">Eu sou <span class="text-gradient">Gustavo Rodrigues</span></h1>
+                    <h2 class="hero-typed-title">Atuo em <span id="typed-text"></span><span class="cursor">|</span></h2>
+                    
+                    <p class="hero-description">
+                        Tenho 18 anos, sou cursado em Marketing Digital, atuo como laboratorista óptico há 4 anos e atualmente curso Engenharia de Software na UniFil. 
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <!-- Sombra do octógono -->
+                    <div class="octagon-geometric-shadow">
+                        <!-- Borda octógono geométrica -->
+                        <div class="octagon-geometric-border">
+                            <img src="assets/gustavo.jpg" alt="Foto de Gustavo Rodrigues" class="hero-profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about"><i class="fa-solid fa-chevron-down bounce"></i></a>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim e Habilidades -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Minha Jornada</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Detalhes Pessoais -->
+                    <div class="about-info card-glass">
+                        <h3>Perfil</h3>
+                        <p>
+                            Sou apaixonado pela resolução de problemas complexos e pela criação de sistemas eficientes. Minha trajetória combina a precisão técnica do trabalho óptico com a visão estratégica do marketing digital e a base lógica da engenharia de software.
+                        </p>
+                        
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-user"></i>
+                                <span><strong>Idade:</strong> 18 anos</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span><strong>Educação:</strong> Engenharia de Software - UniFil</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span><strong>Profissão:</strong> Laboratorista Óptico (4 anos)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <span><strong>Marketing:</strong> Cursado em Marketing Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bloco Especial: Descrição da transição de carreira -->
+                    <div class="about-motivation card-glass highlight-card">
+                        <div class="card-glow"></div>
+                        <h3>Descrição</h3>
+                        <div class="motivation-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="motivation-text">
+                                Minha ideia principal era cursar psicologia, mas por viver o mundo dos sistemas e por influências pessoais, optei por essa área.
+                            </p>
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </div>
+                        
+                        <div class="motivation-footer">
+                            <div class="motivation-badge">
+                                <i class="fa-solid fa-code-fork"></i>
+                                <span>Rumo à Engenharia de Software</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Habilidades e Competências -->
+                <div class="skills-wrapper">
+                    <div class="skills-section-header">
+                        <h3>Competências & Habilidades</h3>
+                    </div>
+                    
+                    <div class="skills-grid-horizontal">
+                        <!-- Habilidade 1 -->
+                        <div class="skill-item card-glass">
+                            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <h4>Engenharia de Software</h4>
+                            <p>Modelagem de sistemas, arquitetura e lógica avançada aprendidas na UniFil.</p>
+                        </div>
+                        
+                        <!-- Habilidade 2 -->
+                        <div class="skill-item card-glass">
+                            <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h4>Técnico Básico em Informática</h4>
+                            <p>Formação em suporte técnico, manutenção de computadores, redes e fundamentos de TI.</p>
+                        </div>
+                        
+                        <!-- Habilidade 3 -->
+                        <div class="skill-item card-glass">
+                            <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <h4>Marketing Digital</h4>
+                            <p>Estratégia de negócios, comportamento do consumidor e análise de dados web.</p>
+                        </div>
+                        
+                        <!-- Habilidade 4 -->
+                        <div class="skill-item card-glass">
+                            <div class="skill-icon"><i class="fa-solid fa-glasses"></i></div>
+                            <h4>Precisão Técnica</h4>
+                            <p>Foco, atenção aos mínimos detalhes e gestão de laboratório refinados em 4 anos ópticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">O que ando desenvolvendo</span>
+                    <h2 class="section-title">Projetos & Portfólio</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <div class="project-card card-glass">
+                        <div class="project-img-container">
+                            <div class="project-icon-placeholder">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link-btn" aria-label="Ver Demo"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Engenharia de Software</span>
+                            <h3 class="project-title">Gerenciador de Óptica</h3>
+                            <p class="project-description">
+                                Um projeto prático integrando automação de pedidos de lentes, controle de estoque e interface de laboratório para otimizar processos ópticos cotidianos.
+                            </p>
+                            <div class="project-techs">
+                                <span>Lógica</span>
+                                <span>Interface</span>
+                                <span>Banco de Dados</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 2 -->
+                    <div class="project-card card-glass">
+                        <div class="project-img-container">
+                            <div class="project-icon-placeholder">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link-btn" aria-label="Ver Demo"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Marketing & Analytics</span>
+                            <h3 class="project-title">Dashboard de Marketing</h3>
+                            <p class="project-description">
+                                Painel analítico voltado ao acompanhamento de tráfego, funil de conversão digital e ROI de campanhas de tráfego pago.
+                            </p>
+                            <div class="project-techs">
+                                <span>HTML/CSS</span>
+                                <span>Charts</span>
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 3 -->
+                    <div class="project-card card-glass">
+                        <div class="project-img-container">
+                            <div class="project-icon-placeholder">
+                                <i class="fa-solid fa-barcode"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link-btn" aria-label="Ver Demo"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Sistemas & Automação</span>
+                            <h3 class="project-title">Registro & Código de Barras</h3>
+                            <p class="project-description">
+                                Atualmente projetando um sistema de organização e registro de produtos com base em código de barra para um laboratório.
+                            </p>
+                            <div class="project-techs">
+                                <span>Código de Barras</span>
+                                <span>Automação</span>
+                                <span>Controle de Estoque</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Entre em contato</span>
+                    <h2 class="section-title">Contato</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Informações de Contato Direto -->
+                    <div class="contact-info card-glass">
+                        <h3>Vamos conversar!</h3>
+                        <p>
+                            Se você quer falar sobre engenharia de software, marketing digital, laboratório óptico, ou tem uma proposta de projeto, envie uma mensagem!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <!-- E-mail -->
+                            <div class="contact-method-item">
+                                <div class="icon-circle">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span>E-mail</span>
+                                    <a href="mailto:gustavo.rodrigues@email.com">gustavo.rodrigues@email.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- WhatsApp -->
+                            <div class="contact-method-item">
+                                <div class="icon-circle">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span>WhatsApp / Telefone</span>
+                                    <a href="tel:+5543999999999">+55 (43) 99999-9999</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Redes Sociais -->
+                        <div class="social-links">
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário de Contato -->
+                    <div class="contact-form card-glass">
+                        <form id="portfolio-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Seu Nome</label>
+                                <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Seu E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                        <div id="form-feedback" class="form-feedback-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Gustavo Rodrigues. Todos os direitos reservados.</p>
+            <p>Criado com <i class="fa-solid fa-heart text-danger"></i> em Engenharia de Software.</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo Script -->
+    <script src="script.js"></script>
+</body>
+</html>
